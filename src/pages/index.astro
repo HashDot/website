@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title='Lars Hampe'>
+  <div class='flex flex-col items-center justify-center h-screen'>
+    <div>
+      <h1 class='text-5xl'>Lars Hampe</h1>
+      <div class='text-xl text-neutral-500'>Software Engineer & Consultant</div>
+
+      <div class='mt-5'>
+        <div class='flex space-x-5'>
+          <div class='w-16'>.mail</div>
+          <a href='mailto:hello@hashdot.co'>hello@hashdo.co</a>
+        </div>
+
+        <div class='flex space-x-5'>
+          <div class='w-16'>.phone</div>
+          <a href='tel:+4955120019224'>+49 (0)551 200 19 224</a>
+        </div>
+
+        <div class='flex space-x-5'>
+          <div class='w-16'>.meet</div>
+          <a href='https://cal.com/hashdot'>cal.com/hashdot</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</Layout>
+
+<style>
+a {
+  @apply text-green-500 hover:text-green-700 transition;
+}
+</style>
