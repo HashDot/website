@@ -2,34 +2,87 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title='Lars Hampe'>
-  <div class='flex flex-col items-center justify-center h-screen'>
+  <div class="mt-32 space-y-3 grid grid-cols-2 gap-32">
+
     <div>
-      <h1 class='text-5xl'>Lars Hampe</h1>
+      <h1 class="text-5xl text-neutral-100">Lars Hampe</h1>
       <div class='text-xl text-neutral-500'>Software Engineer & Consultant</div>
 
       <div class='mt-5'>
         <div class='flex space-x-5'>
-          <div class='w-16'>.mail</div>
+          <div class='w-16 text-neutral-100'>.mail</div>
           <a href='mailto:hello@hashdot.co'>hello@hashdo.co</a>
         </div>
 
         <div class='flex space-x-5'>
-          <div class='w-16'>.phone</div>
+          <div class='w-16 text-neutral-100'>.phone</div>
           <a href='tel:+4955120019224'>+49 (0)551 200 19 224</a>
         </div>
 
         <div class='flex space-x-5'>
-          <div class='w-16'>.meet</div>
+          <div class='w-16 text-neutral-100'>.meet</div>
           <a href='https://cal.com/hashdot'>cal.com/hashdot</a>
         </div>
       </div>
-      
+
+    </div>
+
+    <div>
+      <img src="/hashdot.png" class="w-full rounded-3xl grayscale" />
+    </div>
+
+  </div>
+
+  <div class='flex flex-col'>
+    <div class="mt-10">
+      <h2 class='text-6xl lg:text-9xl text-neutral-100 uppercase lg:tracking-[90px] tracking-[30px] opacity-30 font-thin'>Skills</h2>
+
+      <div class="flex w-full mt-10 flex-col sm:flex-row">
+        <div class="text-3xl text-blue-900 w-full sm:w-1/3 bg-blue-300 p-5 sm:rounded-l-lg">Frontend</div>
+        <div class="text-2xl w-full sm:w-2/3 text-blue-100 bg-blue-600 p-5 sm:rounded-r-lg">
+          <ul>
+            <li>React / Next.js</li>
+            <li>Tailwind CSS</li>
+            <li>Headless UI / Radix UI</li>
+            <li>Urql</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="flex w-full mt-10 flex-col sm:flex-row">
+        <div class="text-3xl text-violet-900 w-full sm:w-1/3 bg-violet-300 p-5 sm:rounded-l-lg">Backend</div>
+        <div class="text-2xl w-full sm:w-2/3 text-violet-100 bg-violet-600 p-5 sm:rounded-r-lg">
+          <ul>
+            <li>Node.js</li>
+            <li>Nest.js</li>
+            <li>GraphQL</li>
+            <li>Prisma</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="flex w-full mt-10 flex-col sm:flex-row">
+        <div class="text-3xl text-emerald-900 w-full sm:w-1/3 bg-emerald-300 p-5 sm:rounded-l-lg">DevOps / Infrastructure</div>
+        <div class="text-2xl w-full sm:w-2/3 text-emerald-100 bg-emerald-600 p-5 sm:rounded-r-lg">
+          <ul>
+            <li>Ansible</li>
+            <li>Docker</li>
+            <li>Kubernetes / Helm / Kustomize</li>
+            <li>Grafana / Loki / Tempo</li>
+          </ul>
+
+        </div>
+      </div>
+
+
     </div>
   </div>
 </Layout>
 
 <style>
 a {
-  @apply text-green-500 hover:text-green-700 transition;
+  @apply text-[#94E8B4] hover:text-[#73AF8A] transition;
 }
 </style>
