@@ -2,6 +2,7 @@ import './globals.css'
 import { Roboto_Mono, Recursive } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
+import { Analytics } from "@vercel/analytics/react";
 
 const recursive = Recursive({
   subsets: ["latin"],
@@ -88,6 +89,8 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+
+        <Analytics />
       </body>
     </html>
   );
