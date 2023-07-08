@@ -108,10 +108,7 @@ const Services = () => {
                 {service.title}
               </h2>
               <p
-                className={classNames(
-                  "text-white text-lg rounded-lg p-5 ",
-                  service.style
-                )}
+                className={classNames("text-lg rounded-lg p-5 ", service.style)}
               >
                 {service.text}
               </p>
