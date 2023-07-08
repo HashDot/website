@@ -44,6 +44,7 @@ export default function RootLayout({
                 alt="Picture of Lars"
                 width={400}
                 height={400}
+                className="hidden sm:block"
               />
 
               <Image
@@ -55,7 +56,7 @@ export default function RootLayout({
             </div>
           </Link>
 
-          <div className="bg-neutral-900 grid grid-cols-2 md:grid-cols-4 rounded-lg py-5 px-10 text-white w-full gap-5 max-w-screen-lg">
+          <div className="bg-neutral-900 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 rounded-lg py-5 px-10 text-white w-full gap-5 max-w-screen-lg">
             <div className="flex flex-col">
               <span className="font-bold">.mail</span>
               <a href="mailto:hello@hashdot.co">hello@hashdot.co</a>
